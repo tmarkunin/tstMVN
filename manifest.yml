@@ -3,5 +3,5 @@ applications:
  - name: tma-MVN
    random-route: true
    path: target/GetStartedJava.war
-   memory: 256
+   memory: 128
    instances: 1
