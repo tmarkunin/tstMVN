@@ -38,7 +38,7 @@
             	//POST request to API to create a new visitor entry in the database
                 $.ajax({
 				  method: "POST",
-				  url: "http://visitorsapi.mybluemix.net/api/visitors",
+				  url: "./api/visitors",
 				  contentType: "application/json",
 				  data: JSON.stringify({name: name })
 				})
@@ -51,7 +51,7 @@
         
         //Retreive all the visitors from the database
         function getNames(){
-          $.get("http://visitorsapi.mybluemix.net/api/visitors")
+          $.get("./api/visitors")
               .done(function(data) {
                   if(data.length > 0) {
                     $('#databaseNames').html("Database contents: " + JSON.stringify(data));
