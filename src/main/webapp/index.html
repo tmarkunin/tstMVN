@@ -51,7 +51,7 @@
         
         //Retreive all the visitors from the database
         function getNames(){
-          $.get("./api/visitors")
+          $.get("https://git.ng.bluemix.net/timur.markunin/tstmaven.git")
               .done(function(data) {
                   if(data.length > 0) {
                     $('#databaseNames').html("Database contents: " + JSON.stringify(data));
